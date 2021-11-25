@@ -1,0 +1,46 @@
+<div class="padding">
+  <!-- <form [formGroup]="formulaire" (submit)="connexion()"> -->
+    <form>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Connexion</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="mt-2">
+        <p>
+
+          <mat-form-field appearance="outline" class="w-full">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email" formControlName="email">
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+        </p>
+        <p>
+
+          <mat-form-field appearance="outline" class="w-full">
+            <mat-label>Mot de passe</mat-label>
+            <input type="password" matInput placeholder="Mot de passe" formControlName="password">
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+
+        <button mat-raised-button color="primary" type="submit">Connexion</button>
+        <br>
+
+        <!-- <button mat-button color="primary" type="button" (click)="motDePasseOublie()">
+          Mot de passe oublié ?
+        </button> -->
+      </mat-card-actions>
+    </mat-card>
+    <br>
+    <p class="text-center">
+      Vous n'avez pas encore de compte ?
+      <br>
+      <button mat-button color="primary" type="button" routerLink="/inscription">
+        Inscrivez-vous
+      </button>
+    </p>
+  </form>
+
+</div>
