@@ -14,9 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatFormFieldModule,
-    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
